@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Bans;
+    src: url('FONTS/BAHNSCHRIFT-SemiBold.TTF');
+  }
+
+@font-face {
+    font-family: Muli;
+    src: url('FONTS/muli/Muli.ttf');
+  }
+html,body{
+    font-family: Muli;
+    margin:0;
+}
+#top {
+    height:50px;
+    background-color: #323c48;
+    display: flex;
+    align-items: center;
+}
+#top img{
+    height:30px;
+    justify-content: center;
+    margin-left: 70px;
+}
+#top p {
+    color: white;
+    font-weight:bold;
+    justify-content: center;
+    margin:0;
+    font-size:23px;
+}
+
+
+#bottom {
+    color:white;
+    height:200px;
+    background-image: url('IMG/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bottom p{
+    margin:0;
+    padding:30px 0 0 0;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+header {
+    width:100%;
+}
+main {
+    background-image: url('IMG/bg2.png');
+    background-size: cover;
+    height:430px;
+    display: flex;
+    text-align: center;
+}
+
+#left {
+    color:#323c48;
+    justify-content: center;
+    text-align: center;
+    width:80%;
+    margin:0;
+    padding-top:50px;
+}
+#lewy{
+    justify-content: center;
+    text-align: center;
+    width:80%;
+    display:flex;
+}
+#zdj1{
+    z-index:1;
+    position:absolute;
+    height:264px;
+    width:470px;
+    padding-right:700px;
+    padding-top:30px;
+}
+#zdj2{
+    z-index:2;
+    position:absolute;
+    padding-top:130px;
+    height:264px;
+    width:470px;
+}
+#zdj3{
+    z-index:3;
+    position:relative;
+    height:264px;
+    width:470px;
+    padding-left:700px;
+    padding-top:30px;
+}
+#formularzyk{
+    justify-content: center;
+    align-content: center;
+    width:80%;
+    display: flex;
+    padding-top: 35px;
+}
+form{
+    width:600px;
+    height:300px;
+    background-color: white;
+    position: absolute;
+    text-align: left;
+    padding-left: 10px;
+}
+form input{
+    width:50%;
+    height: 15px;
+}
+textarea{
+    height:50%;
+    width:90%;
+}
+#trybuy{
+    height:35px;
+    display:flex;
+    text-align:center;
+    padding-top:330px;
+}
+#buy{
+    border:solid red 3px;
+    background-image:url('IMG/bg2.png');
+    color:red;
+    height:50px;
+    width:200px;
+    font-size:medium;
+}
+#try{
+    border:none;
+    background-color:#61ded0;
+    color:#323c48;
+    height:50px;
+    width:200px;
+    font-size:medium;
+}
+#Sends{
+    border:none;
+    background-color:#61ded0;
+    color:#323c48;
+    height:35px;
+    width:120px;
+    font-size:medium;
+}
+#przyc{
+    display:flex;
+}
+#left img{
+    height:60px;
+    justify-content: center;
+    margin:0;
+}
+#p1{
+    font-weight:bolder;
+    margin:0;
+    font-size:45px;
+}
+#p2{
+    padding-right:100px;
+}
+#p3{
+    padding-left:150px;
+    justify-content: center;
+    margin:0;
+}
+#srodek{
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    text-align: center;
+}
+#srodek2{
+    padding-top:10px;
+    margin-top:0;
+    display:block;
+    font-size:24px;
+    line-height: 10px;
+}
+nav {
+    width:20%;
+    font-family:Bans;
+    font-size: 25px;
+    text-align: center;
+}
+nav a {
+    border:solid #61ded0 3px;
+    background-color: #323c48;
+    color:#61ded0;
+    padding:0;
+    margin:0;
+    display:block; 
+    text-decoration:none;
+}
+nav a:hover{
+    background-color:#61ded0;
+    color:#323c48;
+    border:solid #323c48 3px;
+}
+footer {
+    width:100%;
+    background-color: #323c48;
+    border-top:solid #61ded0 3px;
+    display: flex;
+    height:250px;
+    text-align: center;
+    padding-top:50px;
+}
+footer a{
+    text-decoration:none;
+}
+#pogrubiony{
+    font-weight:bold;
+    color:white;
+    font-size:15px;
+}
+#support{
+    width:20%;
+    text-align: left;
+    padding-left: 100px;
+}
+#support a{
+    display:block;
+    margin:0;
+    color:white;
+    font-size:10px;
+    font-weight: light;
+}
+#downloads{
+    width:20%;
+    text-align: left;
+    padding-left: 100px;
+}
+#downloads a{
+    display:block;
+    margin:0;
+    color:white;
+    font-size:10px;
+    font-weight: light;
+}
+#products{
+    width:20%;
+    text-align: left;
+    padding-left: 200px;
+}
+#products a{
+    display:block;
+    margin:0;
+    color:white;
+    font-size:10px;
+    font-weight: light;
+}
+#follow{
+    width:40%;
+    text-align: left;
+    padding-left: 100px;
+}
+#follow a{
+    
+    display:block;
+    margin:0;
+    color:white;
+    font-size:10px;
+    font-weight: light;
+}
+#email1{
+    border: none;
+    background-color: #323c48;
+    border-bottom: solid white 1px;
+    color:white;
+}
+button{
+    background-color: #61ded0;
+    color: #323c48;
+    border:none;
+}
+#yo{
+    display:flex;
+}
