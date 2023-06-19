@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Sebastian Soból">
+    </head>
+    <body>
+        <input type="text" id="liczba">
+        <input type="button" name="jaka" value="sprawdzmy!" onclick="myFunction()">
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                if(parseInt(document.getElementById("liczba").value)%2==0) document.getElementById("demo").innerHTML = "Podana liczba jest parzysta";
+                else document.getElementById("demo").innerHTML = "Podana liczba jest nieparzysta";
+            }
+        </script>
+    </body>
+</html>
