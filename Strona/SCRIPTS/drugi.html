@@ -1,0 +1,23 @@
+<head>
+    <style>
+        #demo{
+            color:red;
+        }
+    </style>
+</head>
+<button onclick="haslo()">UTWÓRZ LOSOWY STRING</button><p id="demo"></p>
+<script>
+    const btn = document.querySelector('button');
+    btn.addEventListener('click', 'haslo()');
+    function haslo(){
+        var haslo="";
+        var table = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","T","Z","a","b","c","d","e","f","g","h","i","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","!","@","#","$","&","*","_","+","-"];
+        for(var i=0;i<8;i++){
+            var a = Math.floor(Math.random()*(table.length+1));
+            haslo = haslo+""+table[a];
+
+        }
+        document.getElementById("demo").innerHTML=haslo;
+
+    }
+</script>

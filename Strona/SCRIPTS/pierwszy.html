@@ -1,0 +1,20 @@
+<h1>Równanie Kwadratowe</h1>
+<input type="number" id="numer1" name="numer1">x^2+<input type="number" id="numer2"  name="numer2">x+<input type="number" id="numer3"  name="numer3">=0
+<input type="reset"  value="wyczyść"><button onclick="delta()">Sprawdź</button>
+<p id="demo"></p>
+<script>
+    function delta(){
+        var a = document.getElementById("numer1").value;
+        var b = document.getElementById("numer2").value;
+        var c = document.getElementById("numer3").value;
+        var delta = b*b - 4*a*c;
+        var delta1 = -b/(2*a);
+        var delta2 = (-b-Math.sqrt(delta))/(2*a);
+        var delta3 = (-b+Math.sqrt(delta))/(2*a);
+
+        if(delta<0) document.getElementById("demo").innerHTML="brak rozwiązań";
+            else if(delta==0) document.getElementById("demo").innerHTML= "jest jedno rozwiązanie :"+delta1;
+                else if(delta>0) document.getElementById("demo").innerHTML="Są dwa rozwiązania : "+delta2+" i "+delta3;
+                    else if(a==0) document.getElementById("demo").innerHTML="To nie jest równanie kwadratowe, bo a=0";
+    }
+</script>
