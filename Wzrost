@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Sebastian Soból">
+    </head>
+    <body>
+        <script>
+            var wzrost = prompt("Podaj ile mierzysz","");
+            if(parseInt(wzrost)<=150){
+                alert('jesteś niski!');
+            }
+            else if(parseInt(wzrost)>150 && parseInt(wzrost)<180){
+                alert('jesteś średni!');
+            }
+            else alert('JESTEŚ WYSOKI');
+        </script>
+
+    </body>
