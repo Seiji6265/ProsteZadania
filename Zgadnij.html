@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Sebastian Soból">
+    </head>
+    <body>
+        <script>
+            var c=Math.floor(Math.random()*10);
+            var i=1;
+            for(var a=0; ;a++){
+                var b=prompt("zgadnij moja liczbe","");
+                if(b==c) {
+                    alert('zgadłeś moja liczbe! UJdało ci się za  '+i+' razem');
+                    break;
+                }
+                else {
+                    alert('Próbuj dalej');
+                    i++;
+                }
+            }
+        </script>
+    </body>
