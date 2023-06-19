@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Premier League Big 6 | Sebastian Soból 3ig</title>
+    <meta name="author" content="Sebastian Soból">
+    <meta name="description" content="premier league. Big6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Interaktywny obraz z jQuery</h1>
+        <h3>Big 6 Premier League</h3>
+    </header>
+    <div class="picture">
+        <div class="more" id="live">
+            <a href="#" id="l"><img src="dane/more_alt.png" alt="liverpool"></a>
+            <span> Liverpool </span>
+        </div>
+        <div class="more" id="city">
+            <a href="#" id="ci"><img src="dane/more_alt.png" alt="city"></a>
+            <span> Manchester City </span>
+        </div>
+        <div class="more" id="united">
+            <a href="#" id="u"><img src="dane/more_alt.png" alt="united"></a>
+            <span> Manchester United </span>
+        </div>
+        <div class="more" id="chelsea">
+            <a href="#" id="ch"><img src="dane/more_alt.png" alt="chelsea"></a>
+            <span> Chelsea </span>
+        </div>
+        <div class="more" id="tottenham">
+            <a href="#" id="t"><img src="dane/more_alt.png" alt="tottenham"></a>
+            <span> Tottenham </span>
+        </div>
+        <div class="more" id="arsenal">
+            <a href="#" id="a"><img src="dane/more_alt.png" alt="arsenal"></a>
+            <span> Arsenal </span>
+        </div>
+    </div>
+        <br/>
+        <div id="live_info">
+            <img src="dane/liverpool.png" alt="live" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Liverpool_F.C."> Liverpool </a>
+        </div>
+        <div id="city_info">
+            <img src="dane/city.png" alt="city" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Manchester_City_F.C."> Manchester City </a>
+        </div>
+        <div id="united_info">
+            <img src="dane/united.png" alt="united" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Manchester_United_F.C."> Manchester United </a>
+        </div>
+        <div id="chelsea_info">
+            <img src="dane/chelsea.png" alt="chelsea" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Chelsea_F.C."> Chelsea </a>
+        </div>
+        <div id="tottenham_info">
+            <img src="dane/tottenham.png" alt="tottenham" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Tottenham_Hotspur_F.C."> Tottenham </a>
+        </div>
+        <div id="arsenal_info">
+            <img src="dane/arsenal.png" alt="arsenal" /><br/>
+            <a href="https://pl.wikipedia.org/wiki/Arsenal_F.C."> Arsenal </a>
+        </div>
+        <div id="fade_bg">&nbsp;</div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#l").click(function(){
+                $("#live_info").show();
+            });
+            $("#ci").click(function(){
+                $("#city_info").show();
+            });
+            $("#u").click(function(){
+                $("#united_info").show();
+            });
+            $("#ch").click(function(){
+                $("#chelsea_info").show();
+            });
+            $("#t").click(function(){
+                $("#tottenham_info").show();
+            });
+            $("#a").click(function(){
+                $("#arsenal_info").show();
+            });
+            $("#fade_bg, .close a").click(function(){
+                $("#fade_bg").fadeOut();
+                $("#infobox").animate({bottom: '-200px'},300, function(){
+                    $("#infobox > div").hide();
+                });
+            });
+        });
+        </script>
+    <footer>
+        <p>&copy; ZSE KRAKÓW 2022 | Wykonał: Sebastian Soból, kl. 3ig</p>
+    </footer>
+</body>
+</html>
